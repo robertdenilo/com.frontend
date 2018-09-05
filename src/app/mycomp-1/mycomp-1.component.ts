@@ -38,7 +38,7 @@ export class Mycomp1Component implements OnInit {
   }
   add(name: string): void {
     name = name.trim();
-      if (!name) {return;}
+      if (!name) {return; }
     this.myserv1.addUser({name} as Users).subscribe(user => this.users1.push(user[0]));
     console.log(this.users1);
   }
