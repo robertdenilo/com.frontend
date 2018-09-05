@@ -1,0 +1,8 @@
+{
+  "/asia": {
+    "target": "http://localhost5",
+    "secure": false,
+    "logLevel" : "debug",
+    "changeOrigin": true
+  }
+}

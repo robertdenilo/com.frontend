@@ -1,0 +1,46 @@
+<p>
+  mycomp-1 works!  {{abc}}
+</p>
+<h2>{{ user.name }} Details</h2>
+<div><span>id: </span>{{user.id}}</div>
+<div><span>name: </span>{{user.name| uppercase }}</div>
+<div>
+    <label>New User Name:
+      <input [(ngModel)]="user.name" placeholder="name">
+    </label>
+    <div *ngIf="selectedUser">
+	    <div><span>id: </span>{{selectedUser.id}}</div>
+		<label>New User Name:
+			<input [(ngModel)]="selectedUser.name" placeholder="name2">
+		</label>
+
+	</div>
+
+	<h2>My Users</h2>
+	<ul class="users">
+	  <li *ngFor="let user of users1" (click)="onSelect(user)"
+	  [class.selected]="user === selectedUser">
+		<span class="badge">{{user.id}}</span> {{user.name}}
+	  </li>
+	</ul>
+	
+	<div>
+	   <label>Passenger Name:
+	   <input #userName />
+	   </label>
+	   <button (click)="add(userName.value); userName.value=''"> 添加 </button>
+	</div>
+</div>
+
+<!--
+<div *ngIf="hero">
+
+  <h2>{{ hero.name | uppercase }} Details</h2>
+  <div><span>id: </span>{{hero.id}}</div>
+  <div>
+    <label>name:
+      <input [(ngModel)]="hero.name" placeholder="name"/>
+    </label>
+  </div>
+
+</div>-->

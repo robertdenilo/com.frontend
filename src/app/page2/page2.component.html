@@ -1,0 +1,14 @@
+<div class="dropdown">
+  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    团号：
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+    <li><a href="#">E0501-2018-CH-16B</a></li>
+    <li><a href="#">E0502-2018-CH-16B</a></li>
+    <li><a href="#">E0503-2018-CH-16B</a></li>
+    <li *ngFor="let item of tourids; let i=index">{{item.tourid}}</li>
+    <li role="separator" class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div>

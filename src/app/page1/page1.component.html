@@ -1,0 +1,32 @@
+
+        <div class="panel panel-primary">
+            <!-- Default panel contents -->
+            <div class="panel-heading">Order List:</div>
+          
+            <!-- Table -->
+            <table class="table">
+        
+              <thead>
+                <tr>
+                    <td>Id</td>
+                    <td>Title</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let user of users1">
+                  <td>{{user.id}}</td>
+                  <td>{{user.name}}</td>
+                </tr>
+                <tr>
+                    <td>order1</td>
+                    <td>name1</td>
+                  </tr>
+                  <tr>
+                    <td>order2</td>
+                    <td>name2</td>
+                  </tr>
+              </tbody>
+            </table>
+        </div>
+
+
