@@ -15,7 +15,7 @@ export class Mycomp1Component implements OnInit {
     id: 1,
     name: 'Passenger1'
   };
-  
+
   selectedUser: Users = {
     id: 1,
     name: 'Ninja2'
